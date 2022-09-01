@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header > ul > li > a, footer > ul > li > a{
+    color: #f5edf0;
+}
+
+header{
+    height: 5vh;
+    background-color: #104547;
+    width: 100%;
+}
+
+footer{
+    height: 5vh;
+    background: linear-gradient(0deg, #222, #7180AC);
+    color: #f5edf0;
+    align-items: center;
+    
+}
+
+header > ul, footer > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header > ul > li, footer > ul > li{
+    text-decoration: none;
+    display: inline;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration:none;
+
+}
+
+a:hover{
+    cursor: pointer;
+    color: #F56960
+}
+
+button > a{
+    margin: 5px;
+    text-align: center;
+    color: #f5edf0;
+    
+}
+
+button > a:hover{
+    cursor: pointer; 
+    color:#f5edf0;
+}
+
+ul {
+    display: flex;
+}
+ul > button{
+    justify-content: space-around;
+}
+
+div{
+    height: 30vh;
+    width: 100%;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+p{
+    width: 90%;
+    text-align: center;
+    align-items: center;
+}
+
+.mid{
+    color: #104547;
+    background-color: #99edCC;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top, .bot{
+    background-color: #f5edf0;
+    align-items: center;
+    flex-direction: column;
+    color: #104547;
+    opacity: 97%;
+}
+
+div > ul > li{
+    display: inline;
+    padding: 2em;
+}
+
+div > ul{
+    padding: 2em;
+}
+
+#carly, #goats, #library{
+    height: 20em;
+    width: fit-content;
+    align-self: center;
+    border: #6ec8f8 4px solid;
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px #7180AC;
+
+}
+
+
+
+.midContainer{
+    display: flex;
+    background-color: #99edCC;
+   
+}
+
+.topContainer, .botContainer{
+    display: flex;
+    background-color: #f5edf0;
+    background-image: url(images/trees.jpg);
+
+}
+
+/*Turns Trees On or Off on Bot Row*/
+.botContainer{
+    background-image: none;
+}
+
+span{
+    color: #FBe7b2;
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+}
+
+span:hover{
+    color: #f5edf0;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+button{
+    background-color: #7180AC;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    height: 3em;
+    padding: 0, 3px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px #222;
+}
+
+button:hover{
+    background-color: #F56960;
+}
+
+/* mediaQueries 1225 x 1080*/
+
+@media screen and (max-width: 1370px) and (max-height: 1180px) {
+
+    #carly{
+        height: 97%;
+        width: fit-content;
+    }
+    #goats{
+        height: fit-content;
+        width: 97%;
+        align-self: center;
+        border: #6ec8f8 4px solid;
+        border-radius: 200px;
+        box-shadow: 5px 5px 5px #7180AC;
+    
+    }
+
+    #library{
+        height: fit-content;
+        width: 97%;
+        align-self: center;
+        border: #6ec8f8 4px solid;
+        border-radius: 200px;
+        box-shadow: 5px 5px 5px #7180AC;
+    }
+    
+    button{
+        background-color: #7180AC;
+        border: none;
+        border-radius: 10px;
+        width: auto;
+        height: fit-content;
+        padding: 0, 3px;
+        align-items: center;
+        box-shadow: 2px 2px 2px #222;
+    }
+
+    div{
+        height: 340px;
+        width: 100%;
+        
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header, footer{
+        height: fit-content;
+    }
+
+    
+}
+
+@media screen and (max-width: 715px) and (max-height: 830px) {
+    div.photo{
+        display: none
+    }
+
+    div, header, footer{
+        height: fit-content;
+        width: 715px;
+        align-items: center;
+    }
+
+    p{
+        width:50%;
+        padding-top: 2px;
+    }
+
+    h1{
+        padding-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) and (max-height: 920px) {
+    div.photo{
+        display: none
+    }
+
+    div, header, footer{
+        height: fit-content;
+        width: 515px;
+        align-items: center;
+    }
+
+    p{
+        width:50%;
+        padding-top: 2px;
+    }
+
+    h1{
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 620px) and (max-height: 900px) {
+    p{
+        margin-top: 2px;
+    }
+
+    h1{
+        margin-top: 10px;
+    }
+
+    div.photo{
+        display: none;
+    }
+}
+
