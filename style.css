@@ -29,6 +29,10 @@ header > ul, footer > ul{
     justify-content: space-evenly;
 }
 
+footer > ul {
+    padding-top: 1em;
+}
+
 header > ul > li, footer > ul > li{
     text-decoration: none;
     display: inline;
@@ -75,8 +79,9 @@ div{
 
 p{
     width: 90%;
-    text-align: center;
+    text-align: justify;
     align-items: center;
+    margin-top: 1em;
 }
 
 .mid{
@@ -273,3 +278,14 @@ button:hover{
     }
 }
 
+@media screen and (max-width: 1370px){
+    #goats{
+        height: 90%;
+        width: fit-content;
+    }
+
+    h1{
+        padding-top: 1em;
+    }
+}
+    
