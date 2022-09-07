@@ -5,6 +5,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+    width: 1400px;
+    background: linear-gradient(to top,#7180AC, #99edCC, #f5edf0, #FBe7b2)
+    
+}
+
 header > ul > li > a, footer > ul > li > a{
     color: #f5edf0;
 }
@@ -12,7 +27,9 @@ header > ul > li > a, footer > ul > li > a{
 header{
     height: 5vh;
     background-color: #104547;
-    width: 100%;
+    width: 1400px;
+    position: fixed;
+    z-index: 2;
 }
 
 footer{
@@ -26,7 +43,7 @@ footer{
 header > ul, footer > ul{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 footer > ul {
@@ -41,12 +58,24 @@ header > ul > li, footer > ul > li{
 
 a{
     text-decoration:none;
+    border-radius: 10px;
+    padding: .25em;
+    color: #104547
 
 }
 
 a:hover{
     cursor: pointer;
-    color: #F56960
+    background-color: #F56960;
+    color: #f5edf0;
+}
+
+#title:hover{
+    cursor: pointer;
+    color: #f5edf0;
+    background-color: #104547;
+    border: 0;
+    padding: 0;
 }
 
 button > a{
@@ -61,8 +90,16 @@ button > a:hover{
     color:#f5edf0;
 }
 
-ul {
+/*===column or row===*/
+
+ul{
     display: flex;
+}
+
+        /*====*/
+
+h1{
+    padding-top: 1em;
 }
 ul > button{
     justify-content: space-around;
@@ -91,6 +128,18 @@ p{
     flex-direction: column;
 }
 
+.mid > ul{
+    flex-wrap: wrap;
+    
+}
+
+.bot > ul{
+    flex-wrap: wrap;
+    
+}
+
+#2{}
+
 .top, .bot{
     background-color: #f5edf0;
     align-items: center;
@@ -100,8 +149,10 @@ p{
 }
 
 div > ul > li{
-    display: inline;
-    padding: 2em;
+    list-style: none;
+    padding: .75em;
+    flex-wrap: wrap;
+    font-size: 1.1em;
 }
 
 div > ul{
@@ -118,34 +169,49 @@ div > ul{
 
 }
 
-
+#carly{
+    margin-top: 4em;
+}
 
 .midContainer{
     display: flex;
     background-color: #99edCC;
-   
+    opacity: 98.5%;
+}
+
+section{
+    background-image: url(images/swirls.jpg);
 }
 
 .topContainer, .botContainer{
     display: flex;
     background-color: #f5edf0;
     background-image: url(images/trees.jpg);
+    
 
 }
 
 /*Turns Trees On or Off on Bot Row*/
 .botContainer{
-    background-image: none;
+    background-image: url(images/trees.jpg);
 }
 
-span{
+.botContainer > div.photo{
+    background-color: #f5edf0;
+    opacity: 98.5%;
+}
+
+
+a#title{
     color: #FBe7b2;
     font-family: 'Caveat', cursive;
     font-size: 3em;
 }
 
-span:hover{
+a#title:hover{
     color: #f5edf0;
+    border: none;
+    padding: none;
 }
 
 h1{
@@ -287,5 +353,88 @@ button:hover{
     h1{
         padding-top: 1em;
     }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+      .menu__btn {
+        position: fixed;
+        top: 28px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #F56960;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+        opacity: 95%;
+      }
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+      .menu__item:hover {
+        background-color: #F56960;
+      }
+      
+      header > ul > li{
+        display: none;
+      }
+
+      .hamburger-menu{
+        display: inline;
+      }
 }
+
+
     

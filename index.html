@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id = "top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,51 +19,140 @@
     <header>
         
         <ul>
-            <span>Ms. Carly's Classroom</span>
-            <li><a href = "#">link</a></li>
-            <li><a href = "#">link</a></li>
-            <li><a href = "#">link</a></li>
+            <span><a href = '#top' id = 'title'>Ms. Carly's Classroom</a></span>
+            <li><a href = "#1">Montessori Philosopy</a></li>
+            <li><a href = "#2">At-Home Activites</a></li>
+            <li><a href = "#3">Works & Purpose</a></li>
+            <li><a href = "#4">Terminology</a></li>
+            <li><a href = "#5">Literacy Resources</a></li>
+            <li><a href = "#6">Positive Discipline</a></li>
         </ul>
+        
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#1">Montessori Philosopy</a></li>
+              <li><a class="menu__item" href="#2">At-Home Activites</a></li>
+              <li><a class="menu__item" href="#3">Works & Purpose</a></li>
+              <li><a class="menu__item" href="#4">Terminology</a></li>
+              <li><a class="menu__item" href="#5">Literacy Resources</a></li>
+              <li><a class="menu__item" href="#6">Positive Discipline</a></li>
+            </ul>
+        </div>
+
     </header>
     <div class="topContainer">
         <div class = 'photo'>
-            <img id = "carly" src = 'images/IMG-4355.JPG'>
+            <img id = "carly" src = 'images/IMG_0695.JPG'>
         </div>
         <div class = "top">
             <h1><pre>  About Me  </pre></h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, rem molestiae, consequatur delectus blanditiis similique nam aut ex magni facilis iusto minima recusandae sapiente iste numquam ratione commodi tempora, architecto culpa quibusdam. Dignissimos voluptatum adipisci aspernatur rerum accusantium provident iusto voluptatibus, laboriosam totam fugiat sint, facilis autem pariatur, doloribus facere!</p>
-            <ul>
-                <li><button><a href = "#">somehting really long</a></button></li>
-                <li><button><a href = "#">something</a></button></li>
-                <li><button><a href = "#">something else</a></button></li>
-            </ul>
         </div>
     </div>
-    <div class = 'midContainer'>
+    <section>
+    <div class = 'midContainer' id = '1'>
         <div class = 'mid'>
-            <h1><pre>  OMG Goats!  </pre></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam consectetur debitis asperiores. Maiores quo harum, quisquam, voluptatum ullam assumenda atque necessitatibus ducimus nostrum tempore iure tenetur ab! Exercitationem, ea corporis dolor, neque odio aliquam voluptatem quidem voluptas dolores rem quia!</p>
+            <h1><pre> Montessori Philosopy </pre></h1>
             <ul>
-                <li><button><a href = "#">link</a></button></li>
-                <li><button><a href = "#">link</a></button></li>
-                <li><button><a href = "#">link</a></button></li>
+                <li><a href = "https://amshq.org/About-Montessori/What-Is-Montessori" target= "_blank">&#x2767; What Is Montessori?</a></li>
+                <li><a href = "https://livingmontessorinow.com/about-montessori/" target="_blank">&#x2767; About</a></li>
+                <li><a href = "https://www.trilliummontessori.org/category/parents/montessori-basics/" target="_blank">&#x2767; Basics</a></li>
+            </ul>
+            <ul>
+                <li><a href = "https://amshq.org/Families/Reading-Material" target="_blank">&#x2767; Reading Material</a></li>
+                <li><a href = "https://carrotsareorange.com/montessori/principles/" target="_blank">&#x2767; Principles</a></li>
+                <li><a href = "https://montessorifortoday.com/category/montessori-method/" target="_blank">&#x2767; Method</a></li>
             </ul>
         </div>
-        <div class = 'photo'>
+        <!-- <div class = 'photo'>
             <img id = "goats" src = 'images/goats.jpg'>
+        </div> -->
+    </div>
+    </section>
+    <div class="botContainer">
+        <!-- <div class = 'photo'>
+            <img id = "library" src = 'images/Classroom-library.jpg'>
+        </div> -->
+        <div class = 'bot' id = '2'>
+            <h1><pre> At-Home Activites </pre></h1>
+            <ul>
+                <li><a href = "https://www.trilliummontessori.org/category/parents/parenting/" target="_blank">&#x2767; Parenting</a></li>
+                <li><a href = "https://www.trilliummontessori.org/category/parents/montessori-home/" target="_blank">&#x2767; Montessori Home</a></li>
+                <li><a href = "https://reachformontessori.com/" target="_blank">&#x2767; Reach For</a></li>
+                <li><a href = "https://www.howwemontessori.com/" target="_blank">&#x2767; How We</a></li>
+            </ul>
+            <ul>
+                <li><a href = "https://ourmontessorilife.com/" target="_blank">&#x2767; Our Life</a></li>
+                <li><a href = "https://thistoddlerlife.com/" target="_blank">&#x2767; This Toddler</a></li>
+                <li><a href = "https://www.themontessorinotebook.com/lots-of-montessori-inspiration/" target="_blank">&#x2767; Inspiration</a></li>
+            </ul>
         </div>
     </div>
-    <div class="botContainer">
-        <div class = 'photo'>
-            <img id = "library" src = 'images/Classroom-library.jpg'>
-        </div>
-        <div class = 'bot'>
-            <h1><pre>  Got Books, Y'all  </pre></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis quos provident ratione dicta illo sint cupiditate voluptas accusamus quidem! Sequi provident quasi quod dolorem doloremque quibusdam modi necessitatibus nulla.</p>
+    <section>
+    <div class = 'midContainer'>
+        <div class = 'mid' id = '3'>
+            <h1><pre> Works and Purpose </pre></h1>
             <ul>
-                <li><button><a href = "#">link</a></button></li>
-                <li><button><a href = "#">link</a></button></li>
-                <li><button><a href = "#">link</a></button></li>
+                <li><a href = "http://www.infomontessori.com/videos.htm" target="_blank">&#x2767; Videos</a></li>
+                <li><a href = "https://ageofmontessori.org/a-parents-introduction-to-montessori-materials/" target="_blank">&#x2767; A Parent's Intro</a></li>
+                <li><a href = "https://montessorifortoday.com/a-guide-to-montessori-lessons-plus-example-lesson-plans/" target="_blank">&#x2767; Lesson Plans</a></li>
+            </ul>
+            <ul>
+                <li><a href = "https://montessoriguide.org/roots-of-behavior" target="_blank">&#x2767; Roots</a></li>
+                <li><a href = "https://montessoriguide.org/assessment" target="_blank">&#x2767; Assessment</a></li>
+                <li><a href = "https://livingmontessorinow.com/how-to-teach-concepts-and-vocabulary-to-your-preschooler-
+                    using-the-three-period-lesson/" target="_blank">&#x2767; Vocabulary Lesson</a></li>
+            </ul>
+        </div>
+        <!-- <div class = 'photo'>
+            <img id = "goats" src = 'images/goats.jpg'>
+        </div> -->
+    </div>
+    </section>
+    <div class="botContainer">
+        <!-- <div class = 'photo'>
+            <img id = "library" src = 'images/Classroom-library.jpg'>
+        </div> -->
+        <div class = 'bot' id = '4'>
+            <h1><pre> Terminology </pre></h1>
+            <ul>
+                <li><a href = "https://www.howwemontessori.com/how-we-montessori/2016/04/montessori-glossary-for-
+                    new-parents-.html" target="_blank">&#x2767; Glossary</a></li>
+                <li><a href = "https://miniapplemontessori.com/5-areas-youll-find-in-a-montessori-classroom/" target="_blank">&#x2767; Areas</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <section>
+    <div class = 'midContainer'>
+        <div class = 'mid' id = '5'>
+            <h1><pre> Literacy Resources </pre></h1>
+            
+            <ul>
+                <li><a href = "https://montessorifortoday.com/montessori-pink-blue-and-green-series-all-you-need-to-
+                    know/#:~:text=The%20Montessori%20Pink%2C%20Blue%2C%20and,write%20first%2C%20and
+                    %20then%20read.
+                    https://reachformontessori.com/how-do-sandpaper-letters-work/" target="_blank">&#x2767; Sandpaper</a></li>
+            </ul>
+        </div>
+        <!-- <div class = 'photo'>
+            <img id = "goats" src = 'images/goats.jpg'>
+        </div> -->
+    </div>
+    </section>
+    <div class="botContainer">
+        <!-- <div class = 'photo'>
+            <img id = "library" src = 'images/Classroom-library.jpg'>
+        </div> -->
+        <div class = 'bot' id = '6'>
+            <h1><pre> Positive Discipline </pre></h1>
+            <ul>
+                <li><a href = "https://www.positivediscipline.com/store" target="_blank">&#x2767; Positive Discipline</a></li>
             </ul>
         </div>
     </div>
